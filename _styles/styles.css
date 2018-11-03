@@ -80,6 +80,9 @@ a:hover {
   position: relative; }
 
 .bubble-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
   width: 100%;
   min-height: 80vh;
   background-color: #9FF299;
@@ -97,14 +100,13 @@ a:hover {
   margin-right: 10rem;
   position: relative;
   z-index: 10;
-  font-size: 5rem;
+  font-size: 5.5rem;
   margin-top: 0;
   line-height: 1.2;
-  max-width: 75rem;
 }
 
 .bubble-box > p:first-of-type {
-  padding-top: 6rem;
+  padding-top: 5rem;
 }
 
 .glow {
@@ -283,7 +285,7 @@ a:hover {
 .portfolio {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   margin: 0 2rem 0 1.5em;
 }
 
@@ -292,6 +294,7 @@ a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
+  min-width: 200px;
 }
 
 .portfolio a {
@@ -320,15 +323,27 @@ a.portfolio-img {
 }
 
 .molecules {
+  text-align: center;
   width: 100%;
   background-image: url(../_img/molecule-background.svg);
   background-size: cover; }
   .molecules p {
     color: #fff;
-    margin: 1rem 3rem 0 3rem; }
+    margin: 2rem 3rem 0 3rem; }
   .molecules h2 {
     color: #fff;
     padding-top: 4rem; }
+
+.molecules a {
+  border-color: inherit;
+  padding: 0 .5rem;
+}
+
+.molecules a:hover {
+  background-color: #fff;
+  color: #EC5959;
+  border-color: #fff;
+}
 
 .hexagon {
   float: left;
@@ -341,7 +356,6 @@ a.portfolio-img {
   shape-outside: polygon(25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%); }
 
 footer {
-  background-color: #EC5959;
   padding: 2rem;
   clear: both;
   text-align: center; }
